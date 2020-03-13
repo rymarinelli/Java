@@ -21,7 +21,7 @@ public class ExtendedCircularQueue<T> extends LinkedQueue<T>
 */
     public void enqueue(T element)
     {
-  		super.enqueue(element);
+       super.enqueue(element);
         rear.setLink(front);
     }  
   
