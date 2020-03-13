@@ -1,0 +1,49 @@
+*/
+
+@author Ryan Marinelli
+@note 	MidTerm 
+@since  25 March 2019
+
+*<p> Question 1 </p>
+
+*<p> For the line String	text =	new Scanner(connection.getInputStream()).useDelimiter("\\Z").next(); </p>
+*<p> The variable text is a String and connection is an instance of the URLConnection class. Use.Delimiter and next are methods from the Scanner class </p>
+
+*<p>  The first 100 characters from the variable text is "<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml." </p>
+
+
+*<p> Question 2 </p>
+
+*<p> Exercise 20829 </p> 
+
+*<p>  a.set(0,3); </p>
+
+
+*<p> Exercise 20839 </p>
+
+*<p> a.set(0, a.get(a.size()-1)*2); </p>
+
+
+<p> Question 3 </p>
+
+<p> Part A </p>
+
+	public interface Iterator<E>
+	boolean  hasNext()
+	E next()
+	void remove ()
+	}
+
+<p> Part B <p>
+<p> There are 16 methods in the Track class. 5 are unique to the class, while 11 are inherited from the base class. </p>
+<p> https://docs.oracle.com/javase/7/docs/api/javax/sound/midi/Track.html </p>
+
+<p>	Part C </p>
+
+<p> It is from the java.lang package </p>
+
+
+
+
+
+
