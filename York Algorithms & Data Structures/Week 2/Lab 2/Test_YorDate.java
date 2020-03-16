@@ -13,7 +13,7 @@ public class Test_YorDate
 		YorDate date1;
 			
 	    // This creates an object which sets the date to the current date
-		 date1 = new YorDate();
+		 date1 = new YorDate(15, 3, 2020);
 		
 		//Using the appropriate methods set, set date1 to your birthdate
 	     date1.setDay(24);
@@ -24,7 +24,7 @@ public class Test_YorDate
 	     System.out.println(date1.getYear() + "/" + value + date1.getMonth() + "/" +  date1.getDay());
 	     
 		//Using appropriate date1 method(s) display your birthday
-		
+		System.out.println(date1.getDayOfWeek());
 		
 	}
 }
