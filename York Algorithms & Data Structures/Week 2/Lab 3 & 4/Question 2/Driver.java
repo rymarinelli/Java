@@ -18,7 +18,7 @@ public class Driver {
 		
 		
 		System.out.println("\n\n" + "From the start of the list");
-	    test.listItems();
+	        test.listItems();
 
 	}
 
