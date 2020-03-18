@@ -30,9 +30,9 @@ public class Shopping {
 		return shopping.size();
 	}	
 	
-	public void showItem(int number)
+	public String showItem(int number)
 	{
-		shopping.get(number);
+		return shopping.get(number);
 	}
 	
 	public void listItems()
