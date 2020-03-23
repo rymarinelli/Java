@@ -9,8 +9,7 @@ public class TestDegreeGrader {
 		//System.out.println(test.getcompFailedCredits());
 		//System.out.println(test.getOutRightFailedMods());
 		
-		test.gradeDegree();
-		test.unitTest();
+		test.startDegreeGrading();
 	}
 	
 	
