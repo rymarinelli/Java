@@ -44,16 +44,23 @@
 			Button calculateButton = new Button();         
 			calculateButton.setText("Calculate");        
 			calculateButton.setOnAction( e ->                     
-								{  					
-									// check that fields are not empty     
+								{    // check that fields are not empty     
 									if(lengthField.getText().isEmpty() || heightField.getText().isEmpty())        
-									{         
-										display.setText("Length and height must be entered"); 
-										
+									{                               
+										display.setText("Length and height must be entered");                       
 									} 
 									
+									else if(Double.parseDouble(lengthField.getText()) == 0 ||
+									   Double.parseDouble(heightField.getText()) == 0 ||
+									   Double.parseDouble(lengthField.getText()) == 
+									   Double.parseDouble(heightField.getText()))
+									{	
+										display.setText("Length and Height cannot be zero \n and "
+												+ "length and height cannot be equal.");
+									}	
+									
 									else                        
-									{     
+									{ 
 										//convert text input to doubles and set the length and height of the Oblong
 										testOblong.setLength(Double.parseDouble(lengthField.getText()));            
 										testOblong.setHeight(Double.parseDouble(heightField.getText())); 
@@ -62,7 +69,7 @@
 										+ "\n" + "The perimeter is: "                                   
 												+ testOblong.calculatePerimeter());                         
 										}                                                                        
-									} 
+									}                                     
 								); 
 			
 			// create and configure an HBox for the labels and text inputs                       
@@ -86,8 +93,6 @@
 		{         
 			launch(args);     
 		}
-		
-		
 	}
 
 									
