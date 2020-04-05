@@ -30,13 +30,21 @@ Analyse its time complexity and express it using asymptotic notations.
 
 SEARCH SORT(A,n,x)
 index = 1 
-while index  ≤ n and A[index]  ≠  x
-  if A[index] < A[index -1 ]
-     A[index -1] = A[index]
-return A[index.length]     
+max = 0
 
-Big-Oh O(n)
-Ω(1)
-Time Complexity N + a
+while index  ≤ n and A[index]  ≠  x
+  if A[index] > max
+     max > A[index]
+  index = index + 1
+  return max
+
+//Best Case
+T(n) = an +b 
+
+//Worse Case
+T(n) = n
+
+Θ(n)
+
 
   
