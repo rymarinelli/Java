@@ -4,19 +4,12 @@ public class SystemTest {
 	
 	public static void main(String[] args)
 	{
-		/*
-		Part B Testing
-		System test = new System ("Apple", "MacBook", 256);
-		test.setHardDisk(256.0);
-		test.setMemory(128);
-		test.setPurchaseCost(500);
-	    java.lang.System.out.println(test.displayDetails());
-	    java.lang.System.out.println(test.diagnoseSystem());
-	    java.lang.System.out.println(test.displaySystemProperties());
-	    
-	    */
+		// Part B 
+		// Testing displaySystemProperties Method 
+		System partB = new System("MacBook", "MacBook Air", 256);
+		java.lang.System.out.println((partB.displaySystemProperties()));
 		
-		System test = new System ("Apple", "MacBook", 256);
+		System test = new System ("MacBook", "MacBook Air", 256);
 		
 		Scanner sc =  new Scanner(java.lang.System.in);
 		test.printMenu();
@@ -66,8 +59,12 @@ public class SystemTest {
 				  	{	
 				  		java.lang.System.out.println("Please input the disk size");
 				  		test.setHardDisk(sc.nextDouble());
+				  		
 				  		java.lang.System.out.println("Please input the memory size");
 				  		test.setMemory(sc.nextInt());
+				  		
+				  		java.lang.System.out.println("Please input the cost of the purchase");
+				  		test.setPurchaseCost(sc.nextDouble());
 				  		
 				  		test.printMenu();
 				  		java.lang.System.out.println(("Please input additional information"));
