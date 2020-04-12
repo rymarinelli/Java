@@ -51,8 +51,8 @@ public class System {
 	public String displayDetails()
 	{
 		
-		return "The make of the of the model is " + 
-				make +  "." + "The model is " +  model + ".\n" +  
+		return "The make is " + 
+				make +  ".\n" + "The model is " +  model + ".\n" +  
 				"The speed is " + speed + ".\n" + "The size of the memory is "
 						+ memorySize + ".\n" + "The size of the hard desk " +
 						hardDiskSize + ".\n" + "The cost of the purchase is " +
@@ -61,7 +61,7 @@ public class System {
 	
 	public String checkHDStatus()
 	{
-	   if(hardDiskSize  > 2)
+	   if(hardDiskSize  >= 2)
 	   {
 		  return "OK"; 
 	   }
@@ -93,7 +93,8 @@ public class System {
 	
 	public String diagnoseSystem()
 	{   
-		return checkHDStatus() + "\n" + Boolean.toString(goodMemorySize());
+		return "Hard disk size = " + checkHDStatus() + "\n" +
+				"Memory size OK = " + Boolean.toString(goodMemorySize()) + "\n";
 	}
 	
 	public String displaySystemProperties()
@@ -130,7 +131,7 @@ public class System {
 		
 	}
 	
-	public static void printMenu()
+	public void printMenu()
 	{
 		java.lang.System.out.println("Please select a choice");
 		java.lang.System.out.println("Choice 1 – Print System Details\n" +
