@@ -23,5 +23,16 @@
   <li> 1|3|8 </li>
   <li> 3|8/li>
  </ul> 
+ 
+ 
+ <h5>Write the ENQUEUE and DEQUEUE algorithms using pseudo-code conventions to detect underflow and overflow of a queue. </h5>
+ 
+ ```
+ QUEUE-EMPTY(Q)
+ if Q.head == Q.tail
+  return true
+ else return false
+ ```
+ 
   
 
