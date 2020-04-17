@@ -60,4 +60,36 @@ POP(L,X)
   return x
   
 ```
+<h5>  
+Implement a queue by a singly linked list L. Write the pseudo-code for the operations ENQUEUE and DEQUEUE in O (1) time. You can play with the algorithm simulation software to see how it works:
+</h5>
+
+```
+QUEUE-EMPTY(L)
+ if L.head = NIL
+  return true
+ else return false
+ 
+ENQUEUE(L,X)
+if QUEUE-EMPTY(L)
+ L.head = x
+else L.tail.next = x
+L.tail = x
+x.next = NIL
+
+DEQUEUE(L,X)
+ if Queue-EMPTY(L)
+  error "Underflow
   
+ else
+  x = L.head
+  if L.head = L.tail
+   L.tail = NIL
+  L.head = L.head.next
+  return X
+  
+  ```
+  
+
+
+ 
