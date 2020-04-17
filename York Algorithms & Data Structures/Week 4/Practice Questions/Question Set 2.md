@@ -65,11 +65,6 @@ Using Figure 10.2 (Links to an external site.) in the Algorithms textbook as a m
   else Q.head = Q.head + 1
   return x
  
-  
-  
- 
- 
- 
  ```
  
   
