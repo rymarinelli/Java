@@ -4,12 +4,13 @@ Using Figure 2.2 as a model,
 illustrate the operation with ⟨31,41,59,26,41,58⟩.
 </h5>
 
-31|41|59|26|41|58
-31|41|59|26|41|58
-26|31|41|59|41|58
-26|31|41|41|59|58
-26|31|41|41|58|59
-
+<ul>
+  <li>31|41|59|26|41|58 </li>
+  <li>31|41|59|26|41|58 </li>
+  <li>26|31|41|59|41|58</li>
+  <li>26|31|41|41|59|58</li>
+  <li>26|31|41|41|58|59</li>
+</ul>
 ```
 INSERTION-SORT(A)
 for j = 2 to A.length  // From the second most left me to end 
