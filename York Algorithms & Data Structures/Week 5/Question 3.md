@@ -41,10 +41,10 @@ MIN-HEAPIFY(A,i)
  <h5>
  Question 5
  </h5>
- 
- <style>
- body {
-  background-color: linen;
+<style> 
+ h5 {
+  color: maroon;
+  margin-left: 40px;
 }
  </style> 
   
