@@ -11,6 +11,7 @@ illustrate the operation with ⟨31,41,59,26,41,58⟩.
   <li>26|31|41|41|59|58</li>
   <li>26|31|41|41|58|59</li>
 </ul>
+
 ```
 INSERTION-SORT(A)
 for j = 2 to A.length  // From the second most left me to end 
@@ -20,4 +21,4 @@ for j = 2 to A.length  // From the second most left me to end
   A[i+1] = A[i] // replace
   i = i - 1 //decrementing through the loop
   A[i + 1] = key  // new key assigned to the lesser number 
-  
+```  
