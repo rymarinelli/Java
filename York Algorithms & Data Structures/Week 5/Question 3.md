@@ -43,7 +43,7 @@ MIN-HEAPIFY(A,i)
  Using the model below, illustrate the operation of BUILD-MAX-HEAP on the array: A =  {5, 3, 17, 10, 84, 19, 6, 22, 9}
  </h5>
 
--------------------------
+```
        5
     3        17
   10|84     19|6
@@ -60,7 +60,6 @@ MIN-HEAPIFY(A,i)
     22      19
   10|3     17|6
 5|9
+```
 
-<h5>
-Question 4
 
