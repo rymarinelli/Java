@@ -46,7 +46,7 @@ For the best case,
 T(n)=T(n−1)+1=n=Θ(n).
 
 Since it is random, it is linear time essentially. 
-
+```
 
 <h5>
 Question 5
