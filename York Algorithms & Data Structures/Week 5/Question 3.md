@@ -39,12 +39,28 @@ MIN-HEAPIFY(A,i)
   ```
  
  <h5>
- Question 5
+ Question 3
+ Using the model below, illustrate the operation of BUILD-MAX-HEAP on the array: A =  {5, 3, 17, 10, 84, 19, 6, 22, 9}
  </h5>
-<style> 
- h5 {
-  color: maroon;
-  margin-left: 40px;
-}
- </style> 
-  
+
+-------------------------
+       5
+    3        17
+  10|84     19|6
+22|9
+--------------------------------
+
+         5
+    84       19
+  22|3     17|6
+10|9
+
+----------------------------------
+         84
+    22      19
+  10|3     17|6
+5|9
+
+<h5>
+Question 4
+
