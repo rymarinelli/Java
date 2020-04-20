@@ -1,0 +1,65 @@
+//PUSH(S, x)
+//POP(S)
+///STACK-EMPTY(S)
+
+```
+STACK-EMPTY(S)
+if top(S) = 0
+  return True
+else return False  
+  
+POP(S)
+if Stack-Empty(S)
+then error "Underflow"
+else top(S) = top(s) - 1n
+  return S[top(S) + 1]
+  
+POP(S)
+  if Stack-Empty(S) = 0
+    error "Underflow
+  top = S.head
+  if S.head.next == NIL
+    S.head = NIL
+    return top
+  else S.head = S.head.next
+       return top
+      
+ POP(S)
+  if Stack-Empty(S) == 0
+    error "underflow"
+  top = S.head # saves top of stack
+  S.head = S.head.next # Deletes first element, and puts next on top of stack
+  return top
+       
+  A singly linked list IS a stack
+  
+  * -> * -> * -> NIL (bottom of stack)
+  
+  assume new value is "new"
+  PUSH(S,new)
+  new.next = S.head
+  S.head = new
+  H* --> * -> NIL (bottom of stack) line 39
+   H* -------->* -> * -> * -> NIL (bottom of stack)
+   
+   
+  merge(A, B)
+    i = 0
+    j = 0
+    
+    while(i < len(A) and j < len(B))
+      if A[i] >= B[j]
+      else
+        C[i+j] = B[j]
+        j++
+        
+  
+      
+  
+  
+  
+  
+   
+  
+ 
+  
