@@ -49,6 +49,7 @@ TREE-SEARCH(x,k)
     else y.right = z
     ```
   
+ 
   ```
    TREE-DELETE
    if z.left != NIL
@@ -63,8 +64,8 @@ TREE-SEARCH(x,k)
       Transaction(T,z,y)
       y.left= z.left
       y.left.p  =y
-      
-     ```
+     ``` 
+     
      
       
       
