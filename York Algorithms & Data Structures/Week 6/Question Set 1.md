@@ -22,6 +22,59 @@ using open addressing with the primary hash function h(k) = k mod m.
 Illustrate the result of inserting these keys using linear probing and quadratic probing
 </h5>
 
-10|	22  |31|	4|	15|	28	|17|	88|	59
-10|	0	 |  9|	4	| 4	|6	  |6|  0	|   4
+10, 22, 31, 4, 15, 28, 17, 88,  59
+ 10  0   9  4  4   6    6    0    4
+------------------------------
+ 0|   |22|22|22|22|22|22|22|22|
+ 1|   |  |  |  |  |  |  |88|88|
+ 2|   |  |  |  |  |  |  |  |  |
+ 3|   |  |  |  |  |  |  |  |  |
+ 4|   |  |  |4 |4 |4 |4 |4 |4 |
+ 5|   |  |  |  |15|15|15|15|15|
+ 6|   |  |  |  |  |28|28|28|28|
+ 7|   |  |  |  |  |  |17|17|17|
+ 8|   |  |  |  |  |  |  |  |59|
+ 9|   |  |31|31|31|31|31|31|31|
+10| 10|10|10|10|10|10|10|10|10|
+
+
+--------------------------------
+ 0|   |22|22|22|22|22|22|22|22|
+ 1|   |  |  |  |  |  |  |  |  |
+ 2|   |  |  |  |  |  |  |88|88|
+ 3|   |  |  |  |  |  |17|17|17|
+ 4|   |  |  |4 |4 |4 |4 |4 |4 |
+ 5|   |  |  |  |  |  |  |  |59|
+ 6|   |  |  |  |  |28|28|28|28|
+ 7|   |  |  |  |  |  |17|17|17|
+ 8|   |  |  |  |15|15|15|15|59|
+ 9|   |  |31|31|31|31|31|31|31|
+10| 10|10|10|10|10|10|10|10|10|
+
+
+<h5>
+ Question 3
+ Suppose that a dynamic set SS is represented by a direct-address table TT of length mm. 
+ Describe a procedure that finds the maximum element of SS. What is the worst-case performance of your procedure?
+ </h5>
+ 
+ ```
+ MAXIMUM(S)
+ return TABLE-MAXIMUM(T,m-1)
+ 
+ TABLE-MAXIMUM(T,L)
+ if l < 0
+   return NIL
+ else if DIRECT-ADDRESS-SEARCH (T,L) != NIL
+   return L
+ else
+   return TABLE-MAXIMIM(T,L-1)
+   
+  ```
+   
+   
+ 
+ 
+
+
  
