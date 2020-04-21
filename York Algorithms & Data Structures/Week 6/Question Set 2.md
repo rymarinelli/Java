@@ -48,6 +48,22 @@ TREE-SEARCH(x,k)
     y.left = z
     else y.right = z
     ```
-   
+   ```
+   TREE-DELETE
+   if z.left != NIL
+      TRANSPLANT(T,z,z.right)
+   else if z.right == NIL
+      TRANSPLANT(T,z,z.left)
+   else y = TREE-MIN(z.right)
+      if y.p != z
+      TRANSPLANT(T,y,r.ight)
+      y.right = z.right
+      y.right.p = y
+      Transaction(T,z,y)
+      y.left= z.left
+      y.left.p =y
+     ```
+     
+      
       
      
