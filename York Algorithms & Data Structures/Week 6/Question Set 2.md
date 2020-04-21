@@ -30,3 +30,24 @@ TREE-SEARCH(x,k)
   return x
    ``` 
   
+  ```
+  TREE-INSERT
+  y = NIL
+  x = T.root
+  
+  while x != NIL
+    y = x
+    if z.key < x.key
+      x = x.left
+    else
+      x = x.right
+   z.p = y
+   if y == NIL
+    T.root = Z
+    else if z.key < y.key
+    y.left = z
+    else y.right = z
+    ```
+   
+      
+     
