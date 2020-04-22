@@ -49,8 +49,7 @@ TREE-SEARCH(x,k)
     else y.right = z
     ```
   
- 
-  ```
+ ``
    TREE-DELETE
    if z.left != NIL
       TRANSPLANT(T,z,z.right)
@@ -64,9 +63,79 @@ TREE-SEARCH(x,k)
       Transaction(T,z,y)
       y.left= z.left
       y.left.p  =y
-     ``` 
+```     
      
-     
-      
-      
-     
+<h5>
+  Question 1 Activity 2
+  For the set of { 1, 4, 5, 10, 16, 17, 21 \}{1,4,5,10,16,17,21} of keys, 
+  draw binary search trees of heights 22, 33, 44, 55, and 66.
+</h5>
+
+<strong> Height 2  </strong>
+              10
+            4    17
+          1  5  16  21
+          
+          
+<strong> Height 3 </strong>          
+             
+             10
+           4    16
+         1   5     17
+                      21
+                   
+<strong> Height 4 </strong>      
+            5
+          4   10
+         1      16
+                  17
+                   21
+                   
+<strong> Height 5 </strong>
+           4
+          1  5
+              10
+                16
+                  17
+                    21
+                    
+<strong> Question 2 </strong>
+            12
+         5      18   
+       2  9   15  19
+             13 17  27
+             
+<strong> Question 3 </strong>
+```
+           12
+        5     18
+      2   9  15  19
+               17
+               
+      //Removing 18         
+            12
+          5     19  
+        2  9  15  17
+        
+      //Removing 15 
+           12
+        5     18
+      2   9  17  19
+       // Removing 9
+           12
+        5     18
+      2      15  19
+               17
+```
+
+<strong> Question 4 </strong>
+
+```
+how the result of inserting 3, 1, 4, 6, 9, 2, 5 and 7 
+               3
+             1   4
+           2    5  6    
+                 7  9
+               ```
+               
+
